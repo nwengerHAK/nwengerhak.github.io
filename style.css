@@ -129,3 +129,44 @@ footer p {
 .dropdown-menu li a:hover {
     background-color: #555;
 }
+
+/* Hintergrundfarbe des Headers und der Navigation */
+header {
+    background-color: #4c8faf; /* Hintergrundfarbe des Headers auf #4c8faf setzen */
+}
+
+.nav-list a {
+    color: white; /* Weiße Schriftfarbe für Links */
+}
+
+.nav-list a:hover {
+    background-color: #555; /* Dunklerer Hover-Effekt */
+    color: white; /* Weißer Text beim Hover */
+}
+
+/* Schriftgröße der Navigation für kleine Bildschirme weiter anpassen */
+@media screen and (max-width: 768px) {
+    .nav-list a {
+        font-size: 14px; /* Schriftgröße für Navigation auf Tablets und Smartphones weiter verkleinern */
+        padding: 12px 15px; /* Etwas mehr Padding für Klickbarkeit */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Für sehr kleine Geräte (Smartphones im Hochformat) */
+    .nav-list a {
+        font-size: 12px; /* Schriftgröße auf 12px für sehr kleine Geräte */
+        padding: 10px 12px; /* Padding anpassen */
+    }
+
+    /* Bei Hover eine bessere Farbe für besseren Kontrast */
+    .nav-list a:hover {
+        background-color: #555; /* Dunkleres Grau für besseren Kontrast */
+    }
+}
+
+/* Logo und Layout-Anpassungen für kleine Bildschirme */
+.logo {
+    height: auto; /* Logo proportional skalieren */
+    max-width: 100%; /* Logo darf nicht über den Rand hinausgehen */
+}
