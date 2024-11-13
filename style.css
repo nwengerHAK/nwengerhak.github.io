@@ -1,0 +1,123 @@
+/* Grundlayout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigationsleiste */
+header {
+    background-color: #4c8faf;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Hauptbereiche */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+section p {
+    color: #666;
+    font-size: 1rem;
+}
+
+logo-container{
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+    background-color: #4c8faf;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Dropdown-Menü */
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4c8faf;
+    border-radius: 5px;
+    min-width: 180px;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
