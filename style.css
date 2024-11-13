@@ -6,6 +6,14 @@
     font-family: Arial, sans-serif;
 }
 
+.pagetitle{
+  padding: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-left: 10;
+  color: #333;
+}
+
 /* Navigationsleiste */
 header {
     background-color: #4c8faf;
