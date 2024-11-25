@@ -149,12 +149,24 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
-  nav ul {
-    font-size: 14px;
-    letter-spacing: -0.5px;
-  }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  nav ul li a {
-    padding: 0.3rem 0.5rem;
-  }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 8px 5px;
+        transition: background-color 0.3s;
+        margin: 8
+    }
 }
