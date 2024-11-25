@@ -147,3 +147,14 @@ footer p {
 *::after {
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    font-size: 14px;
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    padding: 0.3rem 0.5rem; 
+  }
+}
