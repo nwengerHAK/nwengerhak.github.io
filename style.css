@@ -167,6 +167,49 @@ footer p {
         font-size: 14px;
         padding: 8px 5px;
         transition: background-color 0.3s;
-        margin: 8
+        margin: 8;
     }
 }
+
+/* Athleten seite*/
+.athlete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4c8faf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 8px;
+  margin-left: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.athlete-photo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5%;
+  border: 2px solid #ccc;
+}
+
+.athlete-name {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+
+.impressum {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
