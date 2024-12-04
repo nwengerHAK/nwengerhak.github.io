@@ -30,12 +30,7 @@ nav {
     width: 100%;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
 
-}
 
 nav ul li {
     display: inline;
@@ -148,28 +143,60 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: none; /* Hidden by default, shown on small screens */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 20; /* Ensure it's on top of other elements */
+}
+
+/* General Nav Styling for Larger Screens */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the nav bar */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile View */
 @media screen and (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .hamburger-menu {
+        display: block; /* Show hamburger icon */
     }
 
-    nav ul li {
+    #main-nav {
+        display: none; /* Hide the nav by default */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        background-color: #4c8faf;
+        z-index: 10;
+    }
+
+    #main-nav ul {
+        flex-direction: column; /* Stack items vertically */
+        margin: 12px;
+    }
+
+    #main-nav ul li {
         width: 100%;
         text-align: center;
     }
 
-    nav ul li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        padding: 8px 5px;
-        transition: background-color 0.3s;
-        margin: 8;
+    #main-nav ul li a {
+        padding: 5px 0;
     }
 }
+
 
 /* Athleten seite*/
 .athlete-container {
