@@ -110,19 +110,26 @@ footer p {
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #4c8faf;
-    border-radius: 5px;
-    min-width: 180px;
-    padding: 0.5rem;
-    z-index: 10;
+  display: none; /* Standardmäßig versteckt */
+  position: absolute;
+  top: 0%; /* Bringt das Menü näher an den Elternbereich */
+  left: 45%; /* Horizontales Zentrieren vorbereiten */
+  transform: translateX(-50%); /* Exakte horizontale Zentrierung */
+  background-color: #4c8faf;
+  border: 2px solid #ffffff; /* Weißer Rahmen für bessere Sichtbarkeit */
+  border-radius: 5px;
+  min-width: 180px; /* Mindestbreite */
+  padding: 0.5rem;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichte Schatten für mehr Tiefe */
 }
 
 .dropdown-menu li {
     margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
 }
 
 .dropdown-menu li a {
@@ -131,6 +138,7 @@ footer p {
     padding: 0.5rem 1rem;
     display: block;
     transition: background-color 0.3s;
+    border-radius: 3px;
 }
 
 .dropdown-menu li a:hover {
@@ -142,6 +150,7 @@ footer p {
 *::after {
     box-sizing: border-box;
 }
+
 
 /* Hamburger Menu Styling */
 .hamburger-menu {
@@ -184,7 +193,7 @@ nav ul {
 
     #main-nav ul {
         flex-direction: column; /* Stack items vertically */
-        margin: 12px;
+        margin: 20px;
     }
 
     #main-nav ul li {
