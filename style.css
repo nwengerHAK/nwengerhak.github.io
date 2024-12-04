@@ -211,7 +211,7 @@ nav ul {
 
     #main-nav ul {
         flex-direction: column; /* Stack items vertically */
-        margin: 20px;
+        margin: 25px;
     }
 
     #main-nav ul li {

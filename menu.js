@@ -21,7 +21,7 @@ function toggleMenu() {
             }
         });
     } else {
-        console.error("Hamburger menu or main navigation not found in the DOM!");
+        
     }
 }
 
