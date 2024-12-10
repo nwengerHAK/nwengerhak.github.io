@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri Mittersill</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <h1 class="pagetitle">Hubiman</h1>
+
+    <div id="footer-container"></div>
+
+    <script>
+      // Funktion zum Laden von HTML-Dateien und Einfügen in die Seite
+        function loadHTML(elementId, fileName) {
+            fetch(fileName)
+                .then(response => {
+                    // Wenn die Datei erfolgreich geladen wurde, zurückgeben
+                    if (!response.ok) {
+                        throw new Error('Netzwerkfehler beim Laden der Datei');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    // Den geladenen Inhalt in das entsprechende Element einfügen
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    // Fehlerbehandlung: Ausgabe einer Fehlermeldung in der Konsole
+                    console.error('Fehler beim Laden der Datei:', error);
+                    document.getElementById(elementId).innerHTML = `<p>Fehler beim Laden der Datei: ${fileName}</p>`;
+                });
+        }
+
+
+        loadHTML('header-container', '../header-bewerbe.html');
+        loadHTML('footer-container', '../footer-bewerbe.html');
+    </script>
+    <script src="../menu.js"></script>
+
+</body>
+</html>

@@ -129,8 +129,8 @@ footer p {
 .dropdown-menu {
   display: none; /* Standardmäßig versteckt */
   position: absolute;
-  top: 0%; /* Bringt das Menü näher an den Elternbereich */
-  left: 45%; /* Horizontales Zentrieren vorbereiten */
+  top: 100%; /* Bringt das Menü näher an den Elternbereich */
+  left: 50%; /* Horizontales Zentrieren vorbereiten */
   transform: translateX(-50%); /* Exakte horizontale Zentrierung */
   background-color: #4c8faf;
   border: 2px solid #ffffff; /* Weißer Rahmen für bessere Sichtbarkeit */
@@ -207,6 +207,21 @@ nav ul {
         width: 100%;
         background-color: #4c8faf;
         z-index: 10;
+    }
+
+    .dropdown-menu {
+      display: none; /* Standardmäßig versteckt */
+      position: absolute;
+      top: 0%; /* Bringt das Menü näher an den Elternbereich */
+      left: 45%; /* Horizontales Zentrieren vorbereiten */
+      transform: translateX(-50%); /* Exakte horizontale Zentrierung */
+      background-color: #4c8faf;
+      border: 2px solid #ffffff; /* Weißer Rahmen für bessere Sichtbarkeit */
+      border-radius: 5px;
+      min-width: 180px; /* Mindestbreite */
+      padding: 0.5rem;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichte Schatten für mehr Tiefe */
     }
 
     #main-nav ul {
