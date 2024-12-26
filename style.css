@@ -316,7 +316,7 @@ nav ul {
 
 
 .impressum {
-    max-width: 600px;
+    max-width: 80%;
     margin: 0 0 0 20px;
     padding: 20px;
     background: #ffffff;
@@ -326,7 +326,7 @@ nav ul {
 }
 
 .trainingszeiten {
-    max-width: 600px;
+    max-width: 80%;
     margin: 0 0 0 20px;
     padding: 20px;
     background: #ffffff;
@@ -336,7 +336,7 @@ nav ul {
 }
 
 .kontakt {
-    max-width: 600px;
+    max-width: 80%;
     margin: 0 0 0 20px;
     padding: 20px;
     background: #ffffff;
@@ -346,12 +346,12 @@ nav ul {
 }
 
 .bewerbimg{
-  width: 400px;
+  width: 80%;
   margin: 10px 0 10px 0;
 }
 
 .bewerbtext {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 0 0 20px;
     padding: 20px;
     background-color: #ffffff;
