@@ -227,61 +227,6 @@ nav ul {
     padding: 0;
 }
 
-/* Mobile View */
-@media screen and (max-width: 480px) {
-    .hamburger-menu {
-        display: block; /* Show hamburger icon */
-    }
-
-    #main-nav {
-        display: none; /* Hide the nav by default */
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 100%;
-        background-color: #4c8faf;
-        z-index: 10;
-    }
-
-    .dropdown-menu {
-      display: none; /* Standardmäßig versteckt */
-      position: absolute;
-      top: 0%; /* Bringt das Menü näher an den Elternbereich */
-      left: 45%; /* Horizontales Zentrieren vorbereiten */
-      transform: translateX(-50%); /* Exakte horizontale Zentrierung */
-      background-color: #4c8faf;
-      border: 2px solid #ffffff; /* Weißer Rahmen für bessere Sichtbarkeit */
-      border-radius: 5px;
-      min-width: 180px; /* Mindestbreite */
-      padding: 0.5rem;
-      z-index: 10;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichte Schatten für mehr Tiefe */
-    }
-
-    #main-nav ul {
-        flex-direction: column; /* Stack items vertically */
-        margin: 25px;
-    }
-
-    #main-nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    #main-nav ul li a {
-        padding: 5px 0;
-    }
-    footer{
-      height: 60px;
-    }
-    body{
-      padding-top: 50px;
-      padding-bottom: 60px;
-    }
-}
-
-
 /* Athleten seite*/
 .athlete-container {
   display: flex;
@@ -346,7 +291,7 @@ nav ul {
 }
 
 .bewerbimg{
-  width: 80%;
+  width: 330px;
   margin: 10px 0 10px 0;
 }
 
@@ -361,4 +306,63 @@ nav ul {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    .hamburger-menu {
+        display: block; /* Show hamburger icon */
+    }
+
+    #main-nav {
+        display: none; /* Hide the nav by default */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        background-color: #4c8faf;
+        z-index: 10;
+    }
+
+    .dropdown-menu {
+      display: none; /* Standardmäßig versteckt */
+      position: absolute;
+      top: 0%; /* Bringt das Menü näher an den Elternbereich */
+      left: 45%; /* Horizontales Zentrieren vorbereiten */
+      transform: translateX(-50%); /* Exakte horizontale Zentrierung */
+      background-color: #4c8faf;
+      border: 2px solid #ffffff; /* Weißer Rahmen für bessere Sichtbarkeit */
+      border-radius: 5px;
+      min-width: 180px; /* Mindestbreite */
+      padding: 0.5rem;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichte Schatten für mehr Tiefe */
+    }
+
+    #main-nav ul {
+        flex-direction: column; /* Stack items vertically */
+        margin: 25px;
+    }
+
+    #main-nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-nav ul li a {
+        padding: 5px 0;
+    }
+    footer{
+      height: 60px;
+    }
+    body{
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+
+    .bewerbimg{
+      width: 80%;
+      margin: 10px 0 10px 0;
+    }
 }
